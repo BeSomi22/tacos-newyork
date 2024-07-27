@@ -10,7 +10,7 @@ body {
   font-family: "Inria Serif", serif;
 }
 .hero {
-  background: url(assets/bg1-cut.png);
+  background: url(/assets/bg1-cut.png);
   height: 160vh;
   background-size: cover;
   .wrapper {
@@ -90,7 +90,7 @@ body {
   }
 }
 .our-menu {
-  background: url(assets/bg2.png);
+  background: url(/assets/bg2.png);
   background-size: cover;
   height: auto;
   padding-bottom: 85px;
