@@ -1,9 +1,9 @@
-import delivery from "../assets/delivery.png";
-import tele from "../assets/tele.png";
-import phone from "../assets/phone.png";
-import whatsapp from "../assets/whatsapp.png";
-import facebook from "../assets/facebook.png";
-import instagram from "../assets/instagram.png";
+import delivery from "/assets/delivery.png";
+import tele from "/assets/tele.png";
+import phone from "/assets/phone.png";
+import whatsapp from "/assets/whatsapp.png";
+import facebook from "/assets/facebook.png";
+import instagram from "/assets/instagram.png";
 import { motion } from "framer-motion";
 // import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 

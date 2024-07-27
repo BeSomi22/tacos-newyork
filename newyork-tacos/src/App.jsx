@@ -2,7 +2,7 @@ import "./App.scss";
 import Hero from './components/Hero'
 import OurMenu from './components/OurMenu'
 import Contact from "./components/Contact";
-import logo from './assets/logo.png';
+import logo from '/assets/logo.png';
 
 
 function App() {

@@ -1,10 +1,10 @@
-import logo from "../assets/logo.png";
-import phone from "../assets/phone.png";
-import cola from "../assets/cola.png";
-import nuggets from "../assets/nuggets.png";
-import burger from "../assets/burger.png";
-import fries from "../assets/fries.png";
-import tacos from "../assets/tacos.png";
+import logo from "/assets/logo.png";
+import phone from "/assets/phone.png";
+import cola from "/assets/cola.png";
+import nuggets from "/assets/nuggets.png";
+import burger from "/assets/burger.png";
+import fries from "/assets/fries.png";
+import tacos from "/assets/tacos.png";
 import { motion } from "framer-motion";
 
 export default function Hero() {
