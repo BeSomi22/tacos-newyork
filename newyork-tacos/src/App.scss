@@ -1,0 +1,831 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inria Serif", serif;
+}
+.hero {
+  background: url(assets/bg1-cut.png);
+  height: 160vh;
+  background-size: cover;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    .logo {
+      width: 120px;
+      height: 90px;
+      margin-left: 60px;
+    }
+    ul {
+      display: flex;
+      color: white;
+      gap: 80px;
+      li {
+        list-style: none;
+        cursor: pointer;
+      }
+    }
+    .phone {
+      width: 40px;
+      height: 39px;
+      margin-right: 30px;
+    }
+  }
+  .texture {
+    text-align: center;
+    h1 {
+      color: #ffa500;
+      font-size: 55px;
+    }
+    h2 {
+      color: white;
+      font-size: 40px;
+    }
+  }
+  .images {
+    .front-img {
+      z-index: 1;
+      .tacos {
+        position: absolute;
+        bottom: -250px;
+        right: 300px;
+      }
+      .fries {
+        position: absolute;
+        left: 50px;
+        top: 250px;
+      }
+    }
+    .back-img {
+      z-index: -1;
+      img.nuggets {
+        width: 319px;
+        height: 331px;
+        position: absolute;
+        left: 250px;
+        bottom: 0;
+      }
+      img.cola {
+        width: auto;
+        height: auto;
+        position: absolute;
+        left: 550px;
+        padding-top: 30px;
+      }
+      img.burger {
+        width: 436px;
+        height: 320px;
+        position: absolute;
+        right: 150px;
+        bottom: -50px;
+      }
+    }
+  }
+}
+.our-menu {
+  background: url(assets/bg2.png);
+  background-size: cover;
+  height: auto;
+  padding-bottom: 85px;
+  .menu-texture {
+    text-align: center;
+
+    h3 {
+      padding-top: 70px;
+      color: #ffa500;
+      font-size: 22px;
+      font-style: italic;
+    }
+    h1 {
+      color: white;
+      font-size: 44px;
+    }
+  }
+  .menu {
+    background-color: #333;
+    width: fit-content;
+    margin: 45px auto;
+    .menu-item {
+      color: white;
+      font-size: 23px;
+      border: none;
+      background-color: transparent;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+    .menu-item.active {
+      background-color: #ffa500;
+    }
+    .menu-item:hover {
+      background-color: #555;
+    }
+  }
+  .menu-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    width: 700px;
+    margin: 0 auto;
+    .menu-item-detail {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .item-image {
+        width: 180px;
+        height: 180px;
+        border-radius: 20px;
+      }
+      h2 {
+        color: white;
+        text-align: center;
+      }
+      p {
+        color: #ffa500;
+        font-size: large;
+      }
+    }
+  }
+}
+.contact {
+  background-color: #fff8e1;
+  height: 100vh;
+  h1 {
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 40px;
+  }
+  .contact-container {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    h2 {
+      font-weight: bold;
+      font-size: 35px;
+      color: #ffa500;
+      padding: 10px 0 15px 7px;
+      span {
+        color: #333;
+        font-size: 20px;
+      }
+    }
+    .address {
+      font-size: large;
+      font-weight: 520;
+      padding-left: 14px;
+    }
+    h3 {
+      font-weight: bold;
+      padding: 10px 0;
+    }
+    .hours {
+      padding-left: 14px;
+      span {
+        color: #333;
+      }
+    }
+    .phone-n,
+    .whatsapp {
+      img {
+        margin: 15px 10px;
+      }
+    }
+  }
+
+  .delivery {
+    margin-top: 50px;
+    display: flex;
+    .tele {
+      width: 150px;
+      height: 300px;
+    }
+    .delivery-man {
+      width: 270px;
+      height: 270px;
+      overflow: hidden;
+      margin-top: 90px;
+    }
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px 10px;
+  background: url(assets/bg1-cut.png);
+  background-size: cover;
+  img {
+    width: 150px;
+    margin: 20px auto 0 auto;
+  }
+  p {
+    text-align: center;
+    font-size: 16px;
+    color: #fff8e1;
+  }
+  a {
+    color: #ffa500;
+    font-style: 18px;
+    text-decoration: none;
+  }
+}
+
+// Media query for Mobile
+@media (max-width: 768px) {
+  .hero {
+    width: 100%;
+    height: 100vh;
+    .wrapper {
+      padding-top: 10px;
+      .logo {
+        width: 100px;
+        height: 70px;
+        margin-left: 40px;
+      }
+      ul {
+        display: none;
+      }
+      .phone {
+        width: 30px;
+        height: 29px;
+      }
+    }
+    .texture {
+      h1 {
+        font-size: 35px;
+        margin-top: 50px;
+      }
+      h2 {
+        color: white;
+        font-size: 33px;
+      }
+    }
+    .images {
+      .front-img {
+        z-index: 1;
+        .tacos {
+          position: absolute;
+          bottom: 150px;
+          right: 25px;
+          width: 70%;
+          height: auto;
+        }
+        .fries {
+          position: absolute;
+          left: -10px;
+          top: 350px;
+          width: 60%;
+          height: auto;
+        }
+      }
+      .back-img {
+        z-index: -1;
+        img.nuggets {
+          width: 60%;
+          height: auto;
+          position: absolute;
+          left: 10px;
+          top: 370px;
+        }
+        img.cola {
+          width: 50%;
+          height: auto;
+          position: absolute;
+          bottom: 200px;
+          left: 130px;
+        }
+        img.burger {
+          width: 60%;
+          height: auto;
+          position: absolute;
+          right: 0;
+          bottom: 230px;
+        }
+      }
+    }
+  }
+  .our-menu {
+    .menu-texture {
+      h3 {
+        font-size: 18px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+    }
+    .menu {
+      width: 80%;
+      .menu-item {
+        font-size: 16px;
+      }
+      .menu-item.active {
+        background-color: #ffa500;
+      }
+      .menu-item:hover {
+        background-color: #555;
+      }
+    }
+    .menu-content {
+      display: grid;
+      grid-template-columns: auto auto;
+      row-gap: 10px;
+      column-gap: 7px;
+      width: 350px;
+      .menu-item-detail {
+        width: 100%;
+        .item-image {
+          width: 100px;
+          height: 100px;
+          border-radius: 20px;
+          margin: 0 auto;
+        }
+        h2 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .contact {
+    position: relative;
+    height: auto;
+    padding-bottom: 80px;
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .address {
+        text-align: center;
+        span {
+          display: block;
+        }
+      }
+      .phone-n,
+      .whatsapp {
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    .delivery {
+      margin-top: 0px;
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+      .tele {
+        width: 50px;
+        height: 100px;
+      }
+      .delivery-man {
+        width: 130px;
+        height: 130px;
+        overflow: hidden;
+        margin-top: 0px;
+      }
+    }
+  }
+  footer {
+    img {
+      width: 100px;
+      margin: 10px auto 0 auto;
+    }
+  }
+}
+// media query for iphone SE
+@media (max-width: 375px) and (max-height: 740px) {
+  .hero {
+    .images {
+      .front-img {
+        z-index: 1;
+        .tacos {
+          position: absolute;
+          bottom: 50px;
+          right: 25px;
+          width: 70%;
+          height: auto;
+        }
+        .fries {
+          position: absolute;
+          left: -10px;
+          top: 350px;
+          width: 60%;
+          height: auto;
+        }
+      }
+      .back-img {
+        z-index: -1;
+        img.nuggets {
+          width: 60%;
+          height: auto;
+          position: absolute;
+          left: 10px;
+          top: 370px;
+        }
+        img.cola {
+          width: 40%;
+          height: auto;
+          bottom: 100px;
+          left: 120px;
+        }
+        img.burger {
+          width: 60%;
+          height: auto;
+          position: absolute;
+          right: 0;
+          bottom: 130px;
+        }
+      }
+    }
+  }
+}
+//media query for iphones 6/7/8 Plus IOS 11
+@media (max-width: 414px) and (max-height: 736px) {
+  .hero {
+    .images {
+      .front-img {
+        z-index: 1;
+        .tacos {
+          position: absolute;
+          bottom: 50px;
+          right: 25px;
+          width: 70%;
+          height: auto;
+        }
+        .fries {
+          position: absolute;
+          left: -10px;
+          top: 350px;
+          width: 60%;
+          height: auto;
+        }
+      }
+      .back-img {
+        z-index: -1;
+        img.nuggets {
+          width: 60%;
+          height: auto;
+          position: absolute;
+          left: 10px;
+          top: 370px;
+        }
+        img.cola {
+          width: 40%;
+          height: auto;
+          bottom: 100px;
+          left: 120px;
+        }
+        img.burger {
+          width: 60%;
+          height: auto;
+          position: absolute;
+          right: 0;
+          bottom: 130px;
+        }
+      }
+    }
+  }
+}
+
+// media query for tablets
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    width: 100%;
+    height: 80vh; 
+    .wrapper {
+      padding-top: 20px;
+      .logo {
+        width: 120px; 
+        height: 90px;
+        margin-left: 60px; 
+      }
+      ul {
+        display: flex; 
+      }
+      .phone {
+        width: 40px; 
+        height: 39px;
+      }
+      .sidebar {
+        display: none; 
+      }
+    }
+    .texture {
+      h1 {
+        font-size: 45px; 
+        margin-top: 30px; 
+      }
+      h2 {
+        color: white;
+        font-size: 36px; 
+      }
+    }
+    .images {
+      .front-img {
+        z-index: 1;
+        .tacos {
+          position: absolute;
+          bottom: 300px; 
+          right: 100px;
+          width: 60%;
+          height: auto;
+        }
+        .fries {
+          position: absolute;
+          left: 5px; 
+          top: 340px; 
+          width: 50%;
+          height: auto;
+        }
+      }
+      .back-img {
+        z-index: -1;
+        img.nuggets {
+          width: 50%;
+          height: auto;
+          position: absolute;
+          left: 20px; 
+          top: 320px; 
+        }
+        img.cola {
+          width: 37%;
+          height: auto;
+          position: absolute;
+          bottom: 330px; 
+          left: 310px; 
+        }
+        img.burger {
+          width: 50%;
+          height: auto;
+          position: absolute;
+          right: 0;
+          bottom: 480px; 
+        }
+      }
+    }
+  }
+  .our-menu {
+    .menu-texture {
+      h3 {
+        font-size: 20px; 
+      }
+      h1 {
+        font-size: 32px;
+      }
+    }
+    .menu {
+      width: fit-content; 
+      .menu-item {
+        font-size: 18px; 
+      }
+      .menu-item.active {
+        background-color: #ffa500;
+      }
+      .menu-item:hover {
+        background-color: #555;
+      }
+    }
+    .menu-content {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      row-gap: 35px; 
+      column-gap: 50px; 
+      width: 500px;
+      .menu-item-detail {
+        width: 100%;
+        .item-image {
+          width: 120px; 
+          height: 120px;
+          border-radius: 20px;
+          margin: 0 auto;
+        }
+        h2 {
+          font-size: 20px; 
+        }
+      }
+    }
+  }
+  .contact {
+    position: relative;
+    height: auto;
+    padding-bottom: 100px; 
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .address {
+        text-align: center;
+        span {
+          display: block;
+        }
+      }
+      .phone-n,
+      .whatsapp {
+        img {
+          width: 40px; 
+          height: 40px;
+        }
+      }
+    }
+    .delivery {
+      margin-top: 20px;
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 40px; 
+      .tele {
+        width: 60px; 
+        height: 120px;
+      }
+      .delivery-man {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        margin-top: 10px; 
+      }
+    }
+  }
+  footer {
+    img {
+      width: 120px; 
+      margin: 20px auto 0 auto;
+    }
+  }
+}
+
+//media query for tablets like ipad mini
+@media (min-width: 768px) and (max-height: 1024px) {
+  .hero {
+    width: 100%;
+    height: 80vh;
+    .wrapper {
+      padding-top: 20px;
+      .logo {
+        width: 120px;
+        height: 90px;
+        margin-left: 60px;
+      }
+      ul {
+        display: flex;
+      }
+      .phone {
+        width: 40px;
+        height: 39px;
+      }
+      .sidebar {
+        display: none;
+      }
+    }
+    .texture {
+      h1 {
+        font-size: 45px;
+        margin-top: 30px;
+      }
+      h2 {
+        color: white;
+        font-size: 36px;
+      }
+    }
+    .images {
+      .front-img {
+        z-index: 1;
+        .tacos {
+          position: absolute;
+          bottom: 280px;
+          right: 70px;
+          width: 60%;
+          height: auto;
+        }
+        .fries {
+          position: absolute;
+          left: 10px;
+          top: 270px;
+          width: 50%;
+          height: auto;
+        }
+      }
+      .back-img {
+        z-index: -1;
+        img.nuggets {
+          width: 50%;
+          height: auto;
+          position: absolute;
+          left: 20px;
+          top: 320px;
+        }
+        img.cola {
+          width: 30%;
+          height: auto;
+          position: absolute;
+          bottom: 300px;
+          left: 268px;
+        }
+        img.burger {
+          width: 50%;
+          height: auto;
+          position: absolute;
+          right: 0;
+          bottom: 410px;
+        }
+      }
+    }
+  }
+  .our-menu {
+    .menu-texture {
+      h3 {
+        font-size: 20px;
+      }
+      h1 {
+        font-size: 32px;
+      }
+    }
+    .menu {
+      width: 90%;
+      .menu-item {
+        font-size: 18px;
+      }
+      .menu-item.active {
+        background-color: #ffa500;
+      }
+      .menu-item:hover {
+        background-color: #555;
+      }
+    }
+    .menu-content {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      row-gap: 35px;
+      column-gap: 50px;
+      width: 500px;
+      .menu-item-detail {
+        width: 100%;
+        .item-image {
+          width: 120px;
+          height: 120px;
+          border-radius: 20px;
+          margin: 0 auto;
+        }
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .contact {
+    position: relative;
+    height: auto;
+    padding-bottom: 100px;
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .address {
+        text-align: center;
+        span {
+          display: block;
+        }
+      }
+      .phone-n,
+      .whatsapp {
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+    .delivery {
+      margin-top: 20px;
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 40px;
+      .tele {
+        width: 60px;
+        height: 120px;
+      }
+      .delivery-man {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        margin-top: 10px;
+      }
+    }
+  }
+  footer {
+    img {
+      width: 120px;
+      margin: 20px auto 0 auto;
+    }
+  }
+}
